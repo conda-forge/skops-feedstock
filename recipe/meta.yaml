@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skops-{{ version }}.tar.gz
-  sha256: 87690cb319237caad682945f09f901f06599279b5bbff7aecf5d8276424762c8
+  sha256: 3c70f17eb8ed7d7dae13d61477786c24381e7e920c5f8c8cf5075632ac312db1
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   license: MIT
   license_file:
     - LICENSE
-  description: |
+  description: |4
 
     [![banner](https://raw.githubusercontent.com/skops-dev/skops/main/docs/images/logo.png)](http://github.com/skops-dev/skops)
 
