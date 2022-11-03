@@ -13,19 +13,6 @@ Development: http://github.com/skops-dev/skops
 
 Documentation: http://github.com/skops-dev/skops
 
-
-[![banner](https://raw.githubusercontent.com/skops-dev/skops/main/docs/images/logo.png)](http://github.com/skops-dev/skops)
-
-`skops` is a Python library helping you share your
-[scikit-learn](https://scikit-learn.org/stable/) based models
-and put them in production. At the moment, it includes tools to easily
-integrate models on the Hugging Face Hub, which allows you to share your
-models, make them discoverable, and use the Hub's API inference and widgets
-to get outputs of the model without having to download or load the model.
-
-PyPI: [https://pypi.org/project/skops/](https://pypi.org/project/skops/)
-
-
 Current build status
 ====================
 
