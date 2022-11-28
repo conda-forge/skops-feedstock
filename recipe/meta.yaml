@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skops-{{ version }}.tar.gz
-  sha256: 3c70f17eb8ed7d7dae13d61477786c24381e7e920c5f8c8cf5075632ac312db1
+  sha256: 7be44b27251c91e6af954943b9d7a52437f0dd457874837a3d22793bd2e3d25f
 
 build:
   number: 0
