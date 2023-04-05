@@ -1,11 +1,11 @@
-About skops
-===========
+About skops-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skops-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/skops-dev/skops
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/skops-feedstock/blob/main/LICENSE.txt)
 
 Summary: A set of tools to push scikit-learn based models to and pull from Hugging Face Hub
 
