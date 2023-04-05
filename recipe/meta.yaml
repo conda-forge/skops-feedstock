@@ -10,24 +10,22 @@ source:
   sha256: e8900f0c37ed0416022bdfbf03a792bd3d83e9322a65606bd6614a8f511379b3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   # Grayskull generate the following line
-  #   skip: true  # [py<37]
-  # But we are using "noarch: python" with "python >=3.7"
+  #   skip: true  # [py<38]
+  # But we are using "noarch: python" with "python >=3.8"
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
-    - huggingface_hub >=0.8.1
-    - modelcards >=0.1.6
+    - python >=3.8
+    - huggingface_hub >=0.10.1
     - scikit-learn >=0.24
     - tabulate >=0.8.8
-    - typing-extensions >=3.7
 
 test:
   imports:
