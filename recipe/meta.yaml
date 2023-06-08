@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.post0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skops-{{ version }}.tar.gz
-  sha256: e8900f0c37ed0416022bdfbf03a792bd3d83e9322a65606bd6614a8f511379b3
+  sha256: 45b464a264b20dc1756682b63b617057f6185b79db7fdb5934c08cd7b631715f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   # Grayskull generate the following line
   #   skip: true  # [py<38]
