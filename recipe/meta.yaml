@@ -23,9 +23,10 @@ requirements:
     - python >=3.8
   run:
     - python >=3.8
-    - huggingface_hub >=0.10.1
+    - huggingface_hub >=0.17
     - scikit-learn >=0.24
     - tabulate >=0.8.8
+    - packaging >=17.0
 
 test:
   imports:
