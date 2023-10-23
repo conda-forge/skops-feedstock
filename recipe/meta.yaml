@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skops-{{ version }}.tar.gz
-  sha256: 57e2c883c0c7f3869b47344047aa6cbedb3ac01a5995566a713d0be9fb90764e
+  sha256: 3e39333d65f26d5863ad44db5001b4cfe6a29642274ac37af54fb834813aee3f
 
 build:
   number: 0
@@ -23,9 +23,10 @@ requirements:
     - python >=3.8
   run:
     - python >=3.8
-    - huggingface_hub >=0.10.1
+    - huggingface_hub >=0.17
     - scikit-learn >=0.24
     - tabulate >=0.8.8
+    - packaging >=17.0
 
 test:
   imports:
