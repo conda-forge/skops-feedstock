@@ -7,7 +7,7 @@ Home: http://github.com/skops-dev/skops
 
 Package license: MIT
 
-Summary: A set of tools to push scikit-learn based models to and pull from Hugging Face Hub
+Summary: A set of tools, related to machine learning in production.
 
 Development: http://github.com/skops-dev/skops
 
