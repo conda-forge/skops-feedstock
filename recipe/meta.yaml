@@ -1,30 +1,28 @@
 {% set name = "skops" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/skops-{{ version }}.tar.gz
-  sha256: 95645999976e296a55af5d1c96a4ae5e683dee0c6af711634cd5286a224053b7
+  url: https://github.com/skops-dev/skops/archive/v{{ version }}.tar.gz
+  sha256: c72cea87f45ae85d5d50f4601fcef75038318cb0221398bd31b20666a57f8cd1
 
 build:
-  number: 0
   noarch: python
-  # Grayskull generate the following line
-  #   skip: true  # [py<38]
-  # But we are using "noarch: python" with "python >=3.8"
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
+    - python >=3.9
+    - hatchling
     - pip
-    - python >=3.8
   run:
-    - python >=3.8
-    - huggingface_hub >=0.17
-    - scikit-learn >=0.24
+    - python >=3.9
+    - scikit-learn >=1.1
+    - huggingface_hub >=0.17.0
     - tabulate >=0.8.8
     - packaging >=17.0
 
@@ -37,13 +35,9 @@ test:
     - pip
 
 about:
-  home: http://github.com/skops-dev/skops
-  summary: A set of tools to push scikit-learn based models to and pull from Hugging Face Hub
+  summary: A set of tools, related to machine learning in production.
   license: MIT
-  license_file:
-    - LICENSE
-  doc_url: http://github.com/skops-dev/skops
-  dev_url: http://github.com/skops-dev/skops
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
