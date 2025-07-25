@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/skops-dev/skops/archive/v{{ version }}.tar.gz
-  sha256: c72cea87f45ae85d5d50f4601fcef75038318cb0221398bd31b20666a57f8cd1
+  sha256: 4368d56609632858c3aa286948b6cfcba30e964c667f1d2c933f5c6fa9ac0c36
 
 build:
   noarch: python
@@ -22,9 +22,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - scikit-learn >=1.1
-    - huggingface_hub >=0.17.0
-    - tabulate >=0.8.8
+    - numpy >=1.25.0
+    - scipy >=1.10.0
+    - scikit-learn >=1.2
+    - prettytable >=3.9
     - packaging >=17.0
 
 test:
