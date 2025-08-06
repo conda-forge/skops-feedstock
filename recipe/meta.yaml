@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 {% set python_min = "3.9" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/skops-dev/skops/archive/v{{ version }}.tar.gz
-  sha256: 4368d56609632858c3aa286948b6cfcba30e964c667f1d2c933f5c6fa9ac0c36
+  sha256: eb5b250749bd959f9dc66a77f5e376a41d3566ccad96a8e7f85602fb6ccf8a0b
 
 build:
   noarch: python
