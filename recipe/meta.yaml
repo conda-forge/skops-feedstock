@@ -1,9 +1,10 @@
 {% set name = "skops" %}
 {% set version = "0.15" %}
+{% set python_min = "3.9" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/skops-dev/skops/archive/v{{ version }}.tar.gz
@@ -16,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - hatchling
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy >=1.25.0
     - scipy >=1.10.0
     - scikit-learn >=1.2
@@ -33,7 +34,7 @@ test:
   commands:
     - pip check
   requires:
-    - python
+    - python {{ python_min }}
     - pip
 
 about:
