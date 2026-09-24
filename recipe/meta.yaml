@@ -1,5 +1,5 @@
 {% set name = "skops" %}
-{% set version = "0.15" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/skops-dev/skops/archive/v{{ version }}.tar.gz
-  sha256: 74a4d5952332d7071834535b3f71f595e3ceba39a6a5785cad91524b2be80ad8
+  sha256: 6ce9d729bc9ac8be39335e843c091d918b5bd80b18d13924d293c5fd34e9f513
 
 build:
   noarch: python
@@ -18,6 +18,8 @@ requirements:
   host:
     - python {{ python_min }}
     - hatchling
+    - hatch-vcs
+    - setuptools-scm >=10
     - pip
   run:
     - python >={{ python_min }}
